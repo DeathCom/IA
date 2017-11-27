@@ -97,8 +97,10 @@ if __name__ == '__main__':
 
 	entrenar(datos_ent)
 	#intenta reconocer el caracter distorcionado
-	caracter=graf_a_valores('ooooo.o..o..ooo..o.oooooo')
+	print "Digite el patron: " #patrones se capturan desde consola
+	captura=raw_input()
 
+	caracter=graf_a_valores(captura)
 	reconocido=clasificar(caracter, 5)
 
 	print 'Caracter introducido: '
